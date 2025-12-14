@@ -43,7 +43,8 @@ constraints {
 }
 
 recommendation
-
+```
+```output
 Architecture Decision Result
 ----------------------------
 System Name : ECommerce
@@ -53,52 +54,38 @@ System Type : web
 - API Style          : REST
 - Database           : NoSQL
 - Deployment         : Cloud
-
-⚙️ Cara Instalasi
-1️⃣ Clone Repository
-git clone https://github.com/username/ArchDecision-DSL.git
+```
+⚙️ Cara Instalasi<br>
+1️⃣ Clone Repository<br>
+```terminal
+git clone https://github.com/Aang-657/ArchDecision-DSL.git
+```
+```terminal
 cd ArchDecision-DSL
+```
 
 2️⃣ Install ANTLR Runtime untuk Python
+```terminao
 pip install antlr4-python3-runtime
-
-3️⃣ Generate Lexer & Parser (Jika Diperlukan)
+```
+<details>
+  <summary>Generate Lexer & pasrer (Opsional)</summary>
 java -jar antlr-4.13.1-complete.jar \
 -Dlanguage=Python3 \
 -visitor \
 -o generated \
 grammar/ArchDecision.g4
+</details>
 
 ▶️ Cara Menjalankan Program
 
 Pastikan file DSL tersedia di folder src/.
-
+```terminal
 python -m src.main
-
+```
 
 Program akan:
-
-Membaca file .dsl
-
-Melakukan parsing menggunakan ANTLR
-
-Mengeksekusi interpreter
-
-Menampilkan rekomendasi arsitektur
-
-▶️ Cara Menjalankan Program
-
-Pastikan file DSL tersedia di folder src/.
-
-python -m src.main
-
-
-Program akan:
-
-Membaca file .dsl
-
-Melakukan parsing menggunakan ANTLR
-
-Mengeksekusi interpreter
-
-Menampilkan rekomendasi arsitektur
+1. Membaca file .dsl
+2. Melakukan parsing menggunakan ANTLR
+3. Mengeksekusi interpreter
+4. Menampilkan rekomendasi arsitektur
